@@ -25,3 +25,7 @@
 使用者選取區間內的時間桶總餘>=預估工時  
 4.	當日加工
 5.	區間過大=>區間過大（雖仍可排程)，但暫不考慮處理
+
+成果展示：  
+![image](https://github.com/user-attachments/assets/18cbad11-dbcc-42b3-925f-9effd3a05d0e)
+
