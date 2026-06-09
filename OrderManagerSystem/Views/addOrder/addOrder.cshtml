@@ -1,0 +1,71 @@
+﻿@{
+    ViewData["Title"] = "訂單新增控制器";
+}
+<script src="~/js/addOrder.js"></script>
+ <link rel="stylesheet" href="css/chart.css">
+
+<div>
+    <h1>訂單新增控制器</h1>
+</div>
+
+<div>
+    <div>
+        <div>
+            <h2>訂單基本資料</h2>
+            <div>
+                <label>訂單編號：</label>
+                <input id="orderId" />
+            </div>
+            <div>
+                <label>建立日期：</label>
+                <input type="date" id="applyDate"/>
+            </div>
+            <div>
+                <label>交貨日期：</label>
+                <input type="date" id="deadline"/>
+            </div>
+            <div>
+                <label>預計加工日期：</label>
+                <input type="date" id="estimateStartDate" />
+            </div>
+            <div>
+                <label>預計完成日期：</label>
+                <input type="date" id="estimateEndDate" />
+            </div>
+            <div>
+                <label>交貨數量：</label>
+                <input id="amount"/>
+            </div>
+            <div>
+                <label>送貨地點：</label>
+                <input id="location"/>
+            </div>
+            <div>
+                <label>收貨負責人：</label>
+                <input id="mainReceiver" />
+            </div>
+            <div>
+                <label>預估工時：</label>
+                <input id="estimateWorkingTime" />
+                <p>注意事項：預估工時須包含架設機台和更換刀具等校正時間</p>            
+            </div>
+        </div>
+        <div>
+            <button onclick=insertNewOrder()>建立訂單</button>
+        </div>     
+    </div>
+    <div>
+        <h2>目前排程</h2>
+        <div class="scheduledChartTite">
+            <div>星期一</div>
+            <div>星期二</div>
+            <div>星期三</div>
+            <div>星期四</div>
+            <div>星期五</div>
+            <div>星期六</div>
+            <div>星期日</div>
+        </div>
+        <div class="scheduledChart" id="scheduledChart"></div>
+
+    </div>
+</div>
